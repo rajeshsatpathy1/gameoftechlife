@@ -18,7 +18,7 @@ function forestFire
     if(cells(treeArray) == 1)
         cells(fireTreeArray) = 2
     end
-    showCells1(cells);
+    %showCells(cells);
     %Rules that have to be changed by us
     %main loop that has iterations
     t.StartDelay = 1;
@@ -79,16 +79,6 @@ end
 function showCells(cells)
     % Visualization
     imagesc(cells); 
-    %caxis([0 1 2]);
-    colormap([0.3,0.3,0.3;0,1,0;1,0,0]); 
-    axis off; 
-    axis equal; 
-    drawnow
-end
-
-function showCells1(cells)
-    % Visualization
-    imshow(cells); 
     %caxis([0 1 2]);
     colormap([0.3,0.3,0.3;0,1,0;1,0,0]); 
     axis off; 
