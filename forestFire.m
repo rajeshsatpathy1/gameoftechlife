@@ -1,8 +1,6 @@
 function forestFire
     %Burning Tree - 2; 
 
-    t = timer;
-
     %Allocate grid size
     nx = 100;
     ny = 100;

@@ -1,17 +1,11 @@
 function forest_fire(f,p,N,M)
 % Forest fire
-if nargin<4;
-	M=200; 
-end
-if nargin<3;
-	N=200; 
-end
-if nargin<2;
-	p=.03; 
-end
-if nargin<1;
-	f=p*.0001; 
-end
+
+M=200; 
+N=200; 
+p=.03; 
+f=p*.0001; 
+
  
 % initialize;
 F = (rand(M,N) < p)+1;  % tree with probability p 
